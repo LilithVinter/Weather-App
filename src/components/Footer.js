@@ -6,17 +6,26 @@ export default function Footer() {
       <footer>
         <p>
           This project was coded by
-          <a href="https://github.com/LilithVinter" target="_blank">
+          <a
+            href="https://github.com/LilithVinter"
+            target="_blank"
+            rel="noreferrer"
+          >
             Carie Ng
           </a>
           and is
-          <a href="https://github.com/LilithVinter/Weather-App" target="_blank">
+          <a
+            href="https://github.com/LilithVinter/Weather-App"
+            target="_blank"
+            rel="noreferrer"
+          >
             on GitHub
           </a>
           and
           <a
             href="https://carie-learning-to-code-react.netlify.app"
             target="_blank"
+            rel="noreferrer"
           >
             hosted on Netify
           </a>
