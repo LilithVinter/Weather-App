@@ -4,7 +4,6 @@ import './App.css';
 import "./styles.css";
 
 import Header from "./components/Header";
-import Weathers from "./components/Weathers";
 import Footer from "./components/Footer";
 import Search from "./components/SearchEngine";
 
@@ -13,7 +12,6 @@ function App() {
     <div className="App">
       <Header />
       <Search />
-      <Weathers />
       <Footer />
     </div>
   );

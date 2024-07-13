@@ -10,11 +10,14 @@ export default function Footer() {
             Carie Ng
           </a>
           and is
-          <a href="" target="_blank">
+          <a href="https://github.com/LilithVinter/Weather-App" target="_blank">
             on GitHub
           </a>
           and
-          <a href=" " target="_blank">
+          <a
+            href="https://carie-learning-to-code-react.netlify.app"
+            target="_blank"
+          >
             hosted on Netify
           </a>
         </p>
