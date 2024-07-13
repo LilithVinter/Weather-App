@@ -11,7 +11,7 @@ To use the weather section, simply type the name of the city you want to search 
 
 
 <h2>Demo </h2>
-A live demo of the weather app can be found <a href="https://carie-learning-to-code-3.netlify.app"> here </a>.
+A live demo of the weather app can be found <a href="https://carie-learning-to-code-react.netlify.app"> here </a>.
 
 <h2>Technologies & Tools Used </h2>
 <li>HTML</li>
