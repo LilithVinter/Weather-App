@@ -5,25 +5,25 @@ export default function Footer() {
     <div>
       <footer>
         <p>
-          This project was coded by
+          This project was coded by{" "}
           <a
             href="https://github.com/LilithVinter"
             target="_blank"
             rel="noreferrer"
           >
             Carie Ng
-          </a>
-          and is
+          </a>{" "}
+          and is{" "}
           <a
             href="https://github.com/LilithVinter/Weather-App"
             target="_blank"
             rel="noreferrer"
           >
             on GitHub
-          </a>
-          and
+          </a>{" "}
+          and{" "}
           <a
-            href="https://carie-learning-to-code-react.netlify.app"
+            href="https://carie-learning-to-code-3.netlify.app"
             target="_blank"
             rel="noreferrer"
           >

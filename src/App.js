@@ -5,15 +5,17 @@ import "./styles.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Search from "./components/SearchEngine";
+import Weather from "./components/Weather";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <Header />
-      <Search />
-      <Footer />
+      <div className="container">
+        <Header />
+        <Search />
+        <Weather/>
+        <Footer />
+      </div>
     </div>
   );
 }
-
-export default App;
