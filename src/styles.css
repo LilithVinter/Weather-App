@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%) fixed;
+  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%) fixed;
   font-family: "Roboto", sans-serif;
 }
 .App {
@@ -7,31 +7,31 @@ body {
   margin: 60px auto;
   padding: 30px;
   border-radius: 10px;
+  color: #297094;
 }
 
 .container {
-  max-width: 800px;
-  background-color: #e8e9f351;
+  background-color: #a6bacc5c;
   border-radius: 10px;
   padding: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 a {
-  color: #737bb9;
+  color: #62b8ea;
 }
 
 header {
   padding: 30px;
-  color:#e8e9f3;
+  color:#70a2c0;
   text-align: center;
 }
 
 .search-form {
   width:800px;
-
 }
 .search-input {
-  background-color: #e8e9f3e3;
+  background-color: #d0e6ec;
   border: none;
   color: #605e5c;
   font-size: 16px;
@@ -43,32 +43,81 @@ header {
 
 .search-button {
   font-size: 16px;
-  background-color: #adb4e5;
-  color: #33312f;
+  background-color: #94ccec;
+  color: #297094;
   border: none;
-  padding: 15px 20px;
+  padding: 14px 20px;
   border-radius: 50px;
   transition: 0.2ms ease-in-out;
 }
 .search-button:hover {
   cursor: pointer;
-  background-color: #737bb9;
+  background-color: #297094;
   color: #e8e9f3;
-  border: 2px groove #e8e9f3;
+  border: 2px solid #e8e9f3;
+}
+
+.cityName {
+  color:#605e5c;
+  font-weight:medium;
+  margin-left: 40px;
+  text-align: left;
+  margin-left: 100px;
+}
+
+small {
+  color: #605e5c;
+  line-height: 2.5;
 }
 
 .information{
-  text-align: left;
-  padding-top: 20px;
-  padding-left: 40px;
-
+  padding-top: 10px;
+  text-align: center;
 }
+
 ul {
   list-style: none;
   line-height: 1.5;
 }
 
+.weather img{
+  height:80px;
+  margin-bottom: -10px;
+  margin-top: -20px;
+}
+
+.weatherGraphic{
+  text-align: left;
+  margin-left: 120px;
+}
+.weatherDescription{
+  background-color: #87c2f33b;
+  border-radius: 0px;
+  width:auto;
+  margin: 0 20 0 20;
+  padding: 20px;
+  height: 80px;
+}
+
+
+.temperature{
+  font-size: 50px;
+  font-weight: medium;
+  line-height:0.8;
+}
+
+.temperatureUnit{
+  font-size: small;
+  position:relative;
+  top:-25px;
+}
+
+.additionalInfo{
+  text-align: left;
+}
+
 footer {
   font-size: smaller;
-  color: #e8e9f3;
+  color: #297094;
+  margin-top: 10px;
 }
