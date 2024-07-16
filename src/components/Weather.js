@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 
+import DateTime from "./DateTime.js";
+
 export default function Weather() {
   let [city, setCity] = useState(" ");
   let [loaded, setLoaded] = useState(false);
@@ -16,6 +18,7 @@ export default function Weather() {
       description: response.data.weather[0].description,
       city: response.data.name,
       country: response.data.sys.country,
+      date: new Date((response.data.sys.sunrise + response.data.timezone) * 1000),
     });
   }
 
@@ -88,7 +91,7 @@ export default function Weather() {
               </div>
             </div>
             <div className="col-6">
-              <p> date </p>
+              <DateTime date={information.date}/>
             </div>
           </div>
           <div className="weatherDescription">
