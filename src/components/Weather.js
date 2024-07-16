@@ -18,8 +18,9 @@ export default function Weather() {
       description: response.data.weather[0].description,
       city: response.data.name,
       country: response.data.sys.country,
-      date: new Date((response.data.dt *1000) + response.data.timezone * 1000),
-    });
+      date: new Date
+        (response.data.dt * 1000 + (response.data.timezone * 1000)),
+  });
   }
 
   function onSubmit(event) {
@@ -91,7 +92,7 @@ export default function Weather() {
               </div>
             </div>
             <div className="col-6">
-              <DateTime date={information.date}/>
+              <DateTime date={information.date} />
             </div>
           </div>
           <div className="weatherDescription">
