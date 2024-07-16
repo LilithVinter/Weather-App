@@ -17,7 +17,6 @@ export default function Weather() {
       city: response.data.name,
       country: response.data.sys.country,
     });
-    console.log(response.data);
   }
 
   function onSubmit(event) {
