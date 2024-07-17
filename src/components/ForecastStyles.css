@@ -1,0 +1,25 @@
+
+.forecast{
+  text-align:center;
+  margin-top: 20px;
+}
+
+.forecastDay{
+  font-size: 12px;
+
+}
+
+.forecastTemperature{
+  font-size: 12px;
+
+}
+
+.minTemp{
+  opacity: 0.7;
+  margin-right: 10px;
+
+}
+
+.maxTemp{
+  font-weight: 500;
+}

@@ -12,7 +12,7 @@ export default function WeatherInfo(props){
       <div className="row">
         <div className="col-6">
           <div className="weatherGraphic">
-            <WeatherIcon code={props.data.icon} alt={props.data.description}/>
+            <WeatherIcon code={props.data.icon} width={100} height={100} />
             <p> {props.data.description}</p>
           </div>
         </div>
@@ -20,7 +20,7 @@ export default function WeatherInfo(props){
           <DateTime date={props.data.date} />
         </div>
       </div>
-      <WeatherDescription unit={props.data.temperature}/>
+      <WeatherDescription unit={props.data.temperature} />
     </div>
   );
 }
