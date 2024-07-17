@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  background-color: #a6bacc5c;
+  background-color: #34598195;
   border-radius: 10px;
   padding: 10px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
@@ -23,7 +23,7 @@ a {
 
 header {
   padding: 30px;
-  color: #70a2c0;
+  color: #ace0f9;
   text-align: center;
 }
 
@@ -37,13 +37,13 @@ header {
   font-size: 16px;
   padding: 15px;
   border-radius: 50px;
-  width: 320px;
-  margin-left: 30px;
+  width: 360px;
+  margin-left: 80px;
 }
 
 .search-button {
   font-size: 16px;
-  background-color: #94ccec;
+  background-color: #ace0f9;
   color: #297094;
   border: none;
   padding: 14px 20px;
@@ -52,7 +52,7 @@ header {
 }
 .search-button:hover {
   cursor: pointer;
-  background-color: #297094;
+  background-color: #529fc6;
   color: #e8e9f3;
   border: 2px solid #e8e9f3;
 }
@@ -60,14 +60,8 @@ header {
 .cityName {
   color: #605e5c;
   font-weight: medium;
-  margin-left: 40px;
-  text-align: left;
   margin-left: 100px;
-}
-
-small {
-  color: #605e5c;
-  line-height: 2.5;
+  text-align: left;
 }
 
 .weatherInfo {
@@ -91,21 +85,35 @@ ul {
   margin-left: 30px;
 }
 .weatherDescription {
-  background-color: #87c2f33b;
+  background-color: #86d3f78a;
   border-radius: 0px;
   width: auto;
-  margin: 0 20 0 20;
   padding: 20px;
   height: 80px;
 }
 
+.dateTime{
+ display: grid;
+ margin-top: 0px;
+ background-color: #123140;
+ border: dotted 3px  #529fc6;
+ border-radius: 100px;
+ width: 120px;
+ height: 120px;
+ justify-content: space-evenly;
+ line-height: 10px;
+}
+
 .date {
-  font-size: 15px;
+  font-size: 12px;
+  margin-top: 25px;
 }
 
 .time {
   font-weight: 600;
   font-size: 30px;
+  line-height: 1;
+  margin-top: -20px;
 }
 .temperature {
   font-size: 50px;
