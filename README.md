@@ -25,7 +25,9 @@ A live demo of the weather app can be found <a href="https://carie-learning-to-c
 <h2>Credits</h2>
 The weather app was created by Carie (@LilithVinter) as a final project for the SheCodes React workshops.
 <br/>
-The app uses the SheCodes weather API to retrieve weather data.
+The app uses <a her="https://openweathermap.org/api"> OpenWeatherMap API </a> to retrieve weather data.
 <br/>
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<a href="https://www.npmjs.com/package/weather-icons-animated"> Animated React Weather Icons </a> created by <a href="https://github.com/shannonhochkins/weather-icons-animated">Shannon Hochkins </a>. 
+<br/>
+This project was bootstrapped with <a href="https://github.com/facebook/create-react-app">Create React App </a>.
 
