@@ -5,6 +5,7 @@ import WeatherInfo from "./WeatherInfo.js";
 
 export default function Weather(props) {
   let [city, setCity] = useState(props.defaultCity);
+  
   const [information, setInformation] = useState({ ready: false });
 
   function displayWeather(response) {
@@ -23,7 +24,8 @@ export default function Weather(props) {
 
   function search() {
     let APIkey = "0efb4fc16a9ed98dc0b3aafd8491d6ad";
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIkey}&units=metric`;
+    let units = "metric";
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIkey}&units=${units}`;
     axios.get(url).then(displayWeather);
   }
 

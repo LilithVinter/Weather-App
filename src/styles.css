@@ -17,8 +17,9 @@ body {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-a {
-  color: #62b8ea;
+.link {
+  color: #dfeff5;
+  text-decoration: none;
 }
 
 header {

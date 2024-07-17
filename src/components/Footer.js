@@ -10,6 +10,7 @@ export default function Footer() {
             href="https://github.com/LilithVinter"
             target="_blank"
             rel="noreferrer"
+            className="link"
           >
             Carie Ng
           </a>{" "}
@@ -18,6 +19,7 @@ export default function Footer() {
             href="https://github.com/LilithVinter/Weather-App"
             target="_blank"
             rel="noreferrer"
+            className="link"
           >
             on GitHub
           </a>{" "}
@@ -26,6 +28,7 @@ export default function Footer() {
             href="https://carie-learning-to-code-3.netlify.app"
             target="_blank"
             rel="noreferrer"
+            className="link"
           >
             hosted on Netify
           </a>

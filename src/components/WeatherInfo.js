@@ -1,6 +1,7 @@
 import React from "react";
 import DateTime from "./DateTime.js";
 import WeatherIcon from "./WeatherIcon";
+import WeatherDescription from "./WeatherDescription";
 
 export default function WeatherInfo(props){
   return (
@@ -19,22 +20,7 @@ export default function WeatherInfo(props){
           <DateTime date={props.data.date} />
         </div>
       </div>
-      <div className="weatherDescription">
-        <div className="row">
-          <div className="col-6">
-            <span className="temperature">
-              {Math.round(props.data.temperature)}
-            </span>
-            <span className="temperatureUnit">°C </span>
-          </div>
-          <div className="col-6">
-            <ul className="additionalInfo">
-              <li>Humidity: {props.data.humidity} %</li>
-              <li>Wind: {props.data.wind} km/h</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <WeatherDescription unit={props.data.temperature}/>
     </div>
   );
 }
