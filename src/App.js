@@ -13,7 +13,6 @@ export default function App() {
       <div className="container">
         <Header />
         <Weather defaultCity="Copenhagen" />
-        <Forecast/>
         <Footer />
       </div>
     </div>
