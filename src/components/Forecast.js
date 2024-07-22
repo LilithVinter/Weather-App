@@ -28,7 +28,6 @@ export default function Forecast(props) {
   if (loaded) {
     return (
       <div className="forecast">
-        <h3 className="weekForecast">Week Forecast</h3>
         <div className="row">
           {forecastData.map(function (dailyForecast, index) {
             if (index < 7) {
