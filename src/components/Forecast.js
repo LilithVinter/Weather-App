@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 import "./ForecastStyles.css";
@@ -7,6 +7,10 @@ import ForecastDay from "./ForecastDay.js";
 export default function Forecast(props) {
   let [loaded, setLoaded] = useState(false);
   let [forecastData, setForecastData] = useState(null);
+
+  useEffect(() => {
+    setLoaded(false);
+  },[props.coordinates]);
 
   function handleResponse(response) {
     setForecastData(response.data.daily);
@@ -24,6 +28,8 @@ export default function Forecast(props) {
                   <ForecastDay data={dailyForecast} />
                 </div>
               );
+            } else{
+              return null;
             }
           })}
         </div>
@@ -37,6 +43,6 @@ export default function Forecast(props) {
 
     axios.get(apiURL).then(handleResponse);
 
-    return null;
+    return "loading...";
   }
 }
