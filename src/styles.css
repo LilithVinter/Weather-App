@@ -19,7 +19,7 @@ body {
 }
 
 .link {
-  color: #a68f6c;
+  color: #a9620b;
   text-decoration: none;
 }
 
@@ -129,8 +129,9 @@ ul {
 
 .weekForecast {
   text-align: center;
-  font-size: 2px;
-  margin-bottom: 20px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .additionalInfo {
