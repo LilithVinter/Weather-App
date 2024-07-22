@@ -20,7 +20,11 @@ export default function WeatherInfo(props) {
           <DateTime date={props.data.date} />
         </div>
       </div>
-      <WeatherDescription unit={props.data.temperature} />
+      <WeatherDescription
+        unit={props.data.temperature}
+        wind={props.data.wind}
+        humidity={props.data.humidity}
+      />
     </div>
   );
 }

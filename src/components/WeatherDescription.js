@@ -33,8 +33,8 @@ export default function WeatherDescription(props) {
           </div>
           <div className="col-6">
             <ul className="additionalInfo">
-              <li>Humidity: {props.unit} %</li>
-              <li>Wind: {props.unit} km/h</li>
+              <li>Humidity: {props.humidity} %</li>
+              <li>Wind: {props.wind} km/h</li>
             </ul>
           </div>
         </div>
@@ -56,8 +56,8 @@ export default function WeatherDescription(props) {
           </div>
           <div className="col-6">
             <ul className="additionalInfo">
-              <li>Humidity: {props.unit} %</li>
-              <li>Wind: {props.unit} km/h</li>
+              <li>Humidity: {props.humidity} %</li>
+              <li>Wind: {props.wind} km/h</li>
             </ul>
           </div>
         </div>
