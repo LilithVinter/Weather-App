@@ -1,5 +1,5 @@
 <h1> Weather App </h1>
-This is a web app developed as a final project using React. The app allows users to search for any city in the world and provides current weather conditions and time.
+This is a web app developed as a final project using React. The app allows users to search for any city in the world and provides current weather conditions. 
 
 <h2>How to Use</h2>
 To use the weather section, simply type the name of the city you want to search for in the search bar and press search. 
@@ -7,9 +7,8 @@ To use the weather section, simply type the name of the city you want to search 
 <h3>Availible Features:</h3>
 <li>Can search for any city in the world </li>
 <li>Current live weather data: temperature, condition description, humidity, wind speed</li>
-<li>Toggle between Celsius and Fahrenheit temperature units</li>
-<li>Displays local date and time </li>
-
+<li>Toggle between Celsius and Fahrenheit temperature units for current temperature</li>
+<li>Week forecast of the weather upcoming </li>
 
 <h2>Demo </h2>
 A live demo of the weather app can be found <a href="https://carie-learning-to-code-3.netlify.app"> here </a>.
