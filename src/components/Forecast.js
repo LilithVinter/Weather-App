@@ -1,33 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import axios from "axios";
 
-import WeatherIcon from "./WeatherIcon";
 import "./ForecastStyles.css";
+import ForecastDay from "./ForecastDay.js";
 
-export default function Forecast(props){
+export default function Forecast(props) {
+  let [loaded, setLoaded] = useState(false);
+  let [forecastData, setForecastData] = useState(null);
+
   function handleResponse(response) {
-    console.log(response.data);
+    setForecastData(response.data.daily);
+    setLoaded(true);
   }
 
-  let apiKey = "c819171fe0abdc14039af4ef5dda283b";
-  let longitude = props.coordinates.lon;
-  let latitude = props.coordinates.lat;
-  let apiURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
-
-  axios.get(apiURL).then(handleResponse);
-  
-  return (
-    <div className="forecast">
-      <div className="row">
-        <div className="col">
-          <div className="forecastDay">Day </div>
-          <WeatherIcon code="01d" width={50} height={50} />
-          <div className="forecastTemperature">
-            <span className="minTemp">Min Temp°</span>
-            <span className="maxTemp"> Max Temp°</span>
-          </div>
+  if (loaded) {
+    return (
+      <div className="forecast">
+        <div className="row">
+          {forecastData.map(function (dailyForecast, index) {
+            if (index < 6) {
+              return (
+                <div className="col" key={index}>
+                  <ForecastDay data={dailyForecast} />
+                </div>
+              );
+            }
+          })}
         </div>
       </div>
-    </div>
-  );
+    );
+  } else {
+    let apiKey = "c819171fe0abdc14039af4ef5dda283b";
+    let longitude = props.coordinates.lon;
+    let latitude = props.coordinates.lat;
+    let apiURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+
+    axios.get(apiURL).then(handleResponse);
+
+    return null;
+  }
 }

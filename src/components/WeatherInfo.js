@@ -3,7 +3,7 @@ import DateTime from "./DateTime.js";
 import WeatherIcon from "./WeatherIcon";
 import WeatherDescription from "./WeatherDescription";
 
-export default function WeatherInfo(props){
+export default function WeatherInfo(props) {
   return (
     <div className="weatherInfo">
       <h2 className="cityName">
@@ -17,7 +17,7 @@ export default function WeatherInfo(props){
           </div>
         </div>
         <div className="col-6">
-          <DateTime date={props.data.date} coord={props.data.coord} />
+          <DateTime date={props.data.date} />
         </div>
       </div>
       <WeatherDescription unit={props.data.temperature} />

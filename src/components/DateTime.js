@@ -1,9 +1,6 @@
 import React from "react";
-import axios from "axios";
 
 export default function DateTime(props) {
-
-  
 
   let days = [
     "Sunday",
@@ -30,14 +27,11 @@ export default function DateTime(props) {
     "Dec",
   ];
 
-  
-
   let weekday = days[props.date.getDay()];
   let month = months[props.date.getMonth()];
   let day = props.date.getDate();
   let hours = props.date.getHours();
   let minutes = props.date.getMinutes();
-
 
   if (minutes < 10) {
     minutes = `0${minutes}`;
@@ -48,14 +42,14 @@ export default function DateTime(props) {
   }
 
   return (
-    <div className="dateTime">
-      <span className ="date">
-        <br/>
-        {weekday} {day} {month}
-      </span>
-      <span className="time">
-        {hours}:{minutes}
-      </span>
-    </div>
+      <div className="dateTime">
+        <span className="date">
+          <br />
+          {weekday} {day} {month}
+        </span>
+        <span className="time">
+          {hours}:{minutes}
+        </span>
+      </div>
   );
 }
